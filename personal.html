@@ -167,12 +167,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="header__search search">
+                    <form class="header__search search">
                         <input type="search" value="" name="search" id="search" class="search__input"
                                placeholder="Поиск">
                         <button type="button" class="search__button" aria-label="Поиск"></button>
                         <button type="button" class="search__close" aria-label="Закрыть"></button>
-                    </div>
+                    </form>
                     <button class="header__notification" data-fancybox="notification" aria-label="Уведомления"
                             data-src="#modal-notification">
 
@@ -440,12 +440,12 @@
 
                     <div class="header__search search search_mobile">
                         <div class="search_mobile__button"></div>
-                        <div class="search_mobile__content">
+                        <form class="search_mobile__content">
                             <input type="search" value="" name="search" class="search__input" placeholder="Поиск">
                             <button type="button" class="search__button" aria-label="Поиск"></button>
                             <button type="button" class="search__close_mobile search__close"
                                     aria-label="Закрыть"></button>
-                        </div>
+                        </form>
                     </div>
                     <button class="header__notification" data-fancybox="notification__mobile"
                             data-src="#modal-notification" aria-label="Уведомления">
@@ -505,10 +505,10 @@
 <div class="personal">
     <div class="personal__tabs tabs">
         <div class="tabs__nav tabs__nav_personal">
-            <div class="tab  tab_personal tab_active" data-tab="tab1">Уведомления</div>
-            <div class="tab tab_personal" data-tab="tab2">Комментарии</div>
-            <div class="tab tab_personal" data-tab="tab3">Избранное</div>
-            <div class="tab tab_personal" data-tab="tab4">Мои подписки</div>
+            <button class="tab  tab_personal tab_active" data-tab="tab1">Уведомления</button>
+            <button class="tab tab_personal" data-tab="tab2">Комментарии</button>
+            <button class="tab tab_personal" data-tab="tab3">Избранное</button>
+            <button class="tab tab_personal" data-tab="tab4">Мои подписки</button>
         </div>
         <div class="tabs__content tabs__content_personal">
             <div class="tabs__item tabs__item_personal tabs__item_active" id="tab1">
@@ -799,17 +799,17 @@
             <div class="tabs__item tabs__item_personal " id="tab4">
                 <div class="personal__subscriptions  tabssub">
                     <div class="tabssub__nav">
-                        <div class="tabsub tabsub_active" data-tab="tabsub1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="tab tab_sub tab_active" data-tab="tabsub1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 8H9M17 12H12M17 16H10M21 7V17C21 19.2091 19.2091 21 17 21H7C4.79086 21 3 19.2091 3 17V7C3 4.79086 4.79086 3 7 3H17C19.2091 3 21 4.79086 21 7Z" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg> <span>Подписка на Рубрику</span></div>
-                        <div class="tabsub" data-tab="tabsub2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </svg> <span>Подписка на Рубрику</span></button>
+                        <button class="tab tab_sub " data-tab="tabsub2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 20L11 4M17 4L13 20M19 15H4M5 9H20" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                            <span>Подписка на Тег</span></div>
+                            <span>Подписка на Тег</span></button>
 
                     </div>
                     <div class="tabssub__content">
-                        <div class="tabssub__item tabssub__item_active" id="tabsub1">
+                        <div class="tabssub__item tabs__item tabs__item_active" id="tabsub1">
                             <div class="subscriptions__rubric subscriptions">
                              <div class="subscriptions__info result">
 
@@ -896,7 +896,7 @@
                             </div>
 
                            </div>
-                        <div class="tabssub__item" id="tabsub2">
+                        <div class="tabssub__item tabs__item" id="tabsub2">
                             <div class="subscriptions__rubric subscriptions">
                                 <div class="subscriptions__info result">
 
