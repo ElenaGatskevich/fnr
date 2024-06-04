@@ -167,12 +167,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="header__search search">
+                    <form class="header__search search">
                         <input type="search" value="" name="search" id="search" class="search__input"
                                placeholder="Поиск">
                         <button type="button" class="search__button" aria-label="Поиск"></button>
                         <button type="button" class="search__close" aria-label="Закрыть"></button>
-                    </div>
+                    </form>
                     <button class="header__notification" data-fancybox="notification" aria-label="Уведомления"
                             data-src="#modal-notification">
 
@@ -440,12 +440,12 @@
 
                     <div class="header__search search search_mobile">
                         <div class="search_mobile__button"></div>
-                        <div class="search_mobile__content">
+                        <form class="search_mobile__content">
                             <input type="search" value="" name="search" class="search__input" placeholder="Поиск">
                             <button type="button" class="search__button" aria-label="Поиск"></button>
                             <button type="button" class="search__close_mobile search__close"
                                     aria-label="Закрыть"></button>
-                        </div>
+                        </form>
                     </div>
                     <button class="header__notification" data-fancybox="notification__mobile"
                             data-src="#modal-notification" aria-label="Уведомления">
@@ -508,13 +508,15 @@
                <form>
                    <div class="edit__group">
                        <label class="edit__label" for="edit__name">Имя и Фамилия</label>
-                       <input class="edit__input" id="edit__name" type="text" name="name" placeholder="Андрей Тестироващик">
+                       <textarea class="edit__input" id="edit__name"  name="name" placeholder="Андрей Тестироващик"></textarea>
                    </div>
                    <div class="edit__group">
                        <label class="edit__label" for="edit__about">О себе</label>
                        <textarea class="edit__input edit__input_textarea" id="edit__about"  name="about" placeholder="Расскажите о себе, чтобы пользователи узнали о вас больше"></textarea>
                    </div>
-
+                   <div class="edit__wrap">
+                   <button class="edit__save" type="submit" disabled>Сохранить</button>
+                   </div>
                </form>
            </div>
         </div>
