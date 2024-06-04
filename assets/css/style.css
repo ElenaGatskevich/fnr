@@ -2706,6 +2706,9 @@ max-width: 100%;
 .infopage__more li:not(:last-child){
     margin-bottom: 24px;
 }
+.capital_big .capital__image{
+    min-width: 486px;
+}
 
 @media (max-width:1304px) {
    .header__bottom{
@@ -2727,6 +2730,9 @@ max-width: 100%;
 @media (max-width: 1280px) {
     .capital__image img{
         height: auto;
+    }
+    .capital_big .capital__image img{
+        height: revert-layer;
     }
     .main_personal{
         width: auto!important;
@@ -2923,6 +2929,9 @@ max-width: 100%;
     }
 }
 @media (max-width: 960px) {
+    .capital_big .capital__image {
+        min-width: inherit;
+    }
     .editorial__item{
         width: 47%;
 
