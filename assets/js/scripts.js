@@ -14,7 +14,7 @@ const social = document.querySelectorAll('.header__social');
 
 const search = document.querySelectorAll('.search__input');
 search.forEach(el => el.addEventListener('click', function (el) {
-    this.closest('div').classList.add('open');
+    this.closest('.search').classList.add('open');
     social.forEach(function (el) {
         el.classList.add('hidden');
     }, false);
@@ -36,12 +36,12 @@ searchMobile.forEach(el => el.addEventListener('click', function (el) {
 
 const searchBig = document.querySelectorAll('.search__input_big');
 searchBig.forEach(el => el.addEventListener('click', function (el) {
-    this.closest('div').classList.add('open');
+    this.closest('.search__wrap').classList.add('open');
 }, false));
 
 const searchCloseBig = document.querySelectorAll('.search__close_big');
 searchCloseBig.forEach(el => el.addEventListener('click', function (el) {
-    this.closest('div').classList.remove('open');
+    this.closest('.search__wrap').classList.remove('open');
     searchBig.forEach( function (el) {
         el.value='';
     }, false);
@@ -67,11 +67,48 @@ tabsButtons.forEach(el => {
         const prevActiveButton = document.querySelector('.tab.tab_active');
 
         if (prevActiveButton) {
-            prevActiveButton.classList.remove('tab_active');
+               console.log(el.parentNode.closest('.tabs__item_active'));
+            if(el.parentNode.closest('.tabs__item_active')){
+                const child=el.parentNode.closest('.tabs__item_active').querySelectorAll('.tab');
+
+              child.forEach(el=>{
+                  el.classList.remove('tab_active');
+              });
+                const nextActiveItemId = `#${el.getAttribute('data-tab')}`;
+
+                const nextActiveItem = document.querySelector(nextActiveItemId);
+
+                el.classList.add('tab_active');
+
+                nextActiveItem.classList.add('tabs__item_active');
+            }
+            else{
+                prevActiveButton.classList.remove('tab_active');
+            }
+
         }
 
         if (prevActiveItem) {
-            prevActiveItem.classList.remove('tabs__item_active');
+            if(el.parentNode.closest('.tabs__item_active')){
+
+                    const child=el.parentNode.closest('.tabs__item_active').querySelectorAll('.tabs__item');
+
+                    child.forEach(el=>{
+                        el.classList.remove('tabs__item_active');
+                    });
+                    const nextActiveItemId = `#${el.getAttribute('data-tab')}`;
+
+                    const nextActiveItem = document.querySelector(nextActiveItemId);
+
+                    el.classList.add('tab_active');
+
+                    nextActiveItem.classList.add('tabs__item_active');
+
+            }
+            else{
+                prevActiveItem.classList.remove('tabs__item_active');
+            }
+
         }
 
         const nextActiveItemId = `#${el.getAttribute('data-tab')}`;
@@ -83,28 +120,24 @@ tabsButtons.forEach(el => {
         nextActiveItem.classList.add('tabs__item_active');
     });
 });
-const tabsSubButtons = document.querySelectorAll('.tabsub');
 
 
-tabsSubButtons.forEach(el => {
-    el.addEventListener('click', () => {
-        const prevActiveItem = document.querySelector('.tabssub__item.tabssub__item_active');
-        const prevActiveButton = document.querySelector('.tabsub.tabsub_active');
 
-        if (prevActiveButton) {
-            prevActiveButton.classList.remove('tabsub_active');
+const massivInput = document.querySelectorAll('.edit__input');
+const btnSubmit = document.querySelector('.edit__save');
+
+let allInputsFilled = false;
+
+massivInput.forEach(element => {
+    element.addEventListener('input', () => {
+        allInputsFilled = true;
+        massivInput.forEach(input => {
+            if (!input.value) {
+                allInputsFilled = false;
+            }
+        });
+        if (allInputsFilled) {
+            btnSubmit.disabled = false;
         }
-
-        if (prevActiveItem) {
-            prevActiveItem.classList.remove('tabssub__item_active');
-        }
-
-        const nextActiveItemId = `#${el.getAttribute('data-tab')}`;
-
-        const nextActiveItem = document.querySelector(nextActiveItemId);
-
-        el.classList.add('tabsub_active');
-
-        nextActiveItem.classList.add('tabssub__item_active');
     });
 });
