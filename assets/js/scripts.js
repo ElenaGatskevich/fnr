@@ -141,3 +141,12 @@ massivInput.forEach(element => {
         }
     });
 });
+
+const comment = document.querySelectorAll('.answer__text');
+const commentClose = document.querySelectorAll('.answer__close');
+comment.forEach(el => el.addEventListener('click', function (el) {
+  this.closest('.answer').classList.toggle('open');
+}, false));
+commentClose.forEach(el => el.addEventListener('click', function (el) {
+    this.closest('.answer').classList.toggle('open');
+}, false));
