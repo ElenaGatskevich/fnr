@@ -10,6 +10,14 @@ document.addEventListener("DOMContentLoaded", (function () {
     }
 
 ));
+const menu=document.querySelectorAll('.header__burger');
+menu.forEach(el => el.addEventListener('click', function (el) {
+    this.closest('body').classList.add('open');
+}, false));
+const menuClose=document.querySelectorAll('.mobile__close');
+menuClose.forEach(el => el.addEventListener('click', function (el) {
+    this.closest('body').classList.remove('open');
+}, false));
 const social = document.querySelectorAll('.header__social');
 
 const search = document.querySelectorAll('.search__input');
