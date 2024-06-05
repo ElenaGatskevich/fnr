@@ -149,7 +149,24 @@ massivInput.forEach(element => {
         }
     });
 });
+const massivInputQ = document.querySelectorAll('.form__input');
+const btnSubmitQ = document.querySelector('.submit__button');
 
+let allInputsFilledQ = false;
+
+massivInputQ.forEach(element => {
+    element.addEventListener('input', () => {
+        allInputsFilledQ = true;
+        massivInputQ.forEach(input => {
+            if (!input.value) {
+                allInputsFilledQ = false;
+            }
+        });
+        if (allInputsFilledQ) {
+            btnSubmitQ.disabled = false;
+        }
+    });
+});
 const comment = document.querySelectorAll('.answer__text');
 const commentClose = document.querySelectorAll('.answer__close');
 comment.forEach(el => el.addEventListener('click', function (el) {
