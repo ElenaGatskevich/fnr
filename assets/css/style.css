@@ -2542,12 +2542,12 @@ max-width: 100%;
     font-weight: 800;
     line-height: 38.4px;
    color: var(--Black_color);
-    margin-top: 24px;
-    margin-bottom: 12px;
+    margin-top: 20px;
+    margin-bottom: 14px;
 }
 .infopage__user{
-    margin-bottom: 24px;
-    margin-top: 24px;
+    margin-bottom: 18px;
+    margin-top: 16px;
 }
 .infopage__preview{
     position: relative;
@@ -2636,7 +2636,7 @@ max-width: 100%;
     font-weight: 800;
     line-height: 33.6px;
     margin-top: 32px;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
     color: var(--Black_color);
 
 }
@@ -2821,6 +2821,7 @@ background: rgba(11, 11, 11, 0.44);
     font-weight: 400;
     line-height: 24px;
 width: 100%;
+    max-width: 100%;
     min-height: 200px;
     box-sizing: border-box;
     cursor: pointer;
@@ -2878,14 +2879,21 @@ cursor: pointer;
     color: var(--Gray1_color);
 
 }
-.unit__likes:hover{
+.unit__likes.active{
+    color: var(--G2_base_hover_color);
+}
+.unit__likes.active path{
+    fill: var(--G2_base_color);
+    stroke: var(--G2_base_color);
+}
+.unit__likes:not(.active):hover{
     color: var(--G2_base_color);
 }
 .unit__likes.active:hover{
     color: var(--G2_base_hover_color);
 
 }
-.unit__likes:hover path{
+.unit__likes:not(.active):hover path{
     fill: var(--G2_base_color);
     stroke: var(--G2_base_color);
 }
@@ -2976,8 +2984,20 @@ cursor: pointer;
     }
 }
 @media (max-width: 1280px) {
+    .flex_article{
+        flex-direction: column!important;
+    }
+    .aside_article{
+        display: block!important;
+        max-width: 100%;
+        margin: 12px 12px 32px 12px;
+    }
     .preview img{
         width: 100%;
+        max-height: 250px;
+    }
+    .infopage__top{
+        margin-bottom: 32px;
     }
     .capital__image img{
         height: auto;
@@ -3235,6 +3255,18 @@ padding: 24px;
     }
 }
 @media (max-width: 768px) {
+    .infopage__title{
+
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 33.6px;
+      
+
+    }
+    .comments__list{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
     .infopage__text p,.infopage__text h2,.infopage__flex,.infopage__title,.infopage__tags,.infopage__user  {
         padding-left: 12px;
         padding-right: 12px;
@@ -3250,7 +3282,7 @@ padding: 24px;
         padding: 0;
     }
     .comments{
-        padding: 32px 12px;
+        padding: 32px 12px 12px 12px;
     }
     .infopage__more{
         margin: 0;
