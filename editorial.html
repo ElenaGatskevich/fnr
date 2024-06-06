@@ -11,6 +11,7 @@
 
 
     <link rel="stylesheet" href="assets/libs/fancybox/fancybox.css">
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
 </head>
 <body>
 <header>
@@ -184,7 +185,7 @@
                             <circle cx="20" cy="4" r="3" fill="#9986D5"/>
                         </svg>
                     </button>
-                    <button class="header__account" aria-label="Аккаунт">
+                    <button class="header__account" aria-label="Аккаунт" data-fancybox data-src="#modal-signin">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12" cy="9" r="5" stroke="white" stroke-width="2"/>
                             <path d="M20 20C18.9175 16.2886 15.866 14 12 14C8.13401 14 5.08248 16.2886 4 20"
@@ -199,30 +200,43 @@
                 </div>
             </div>
             <div class="header__bottom">
-                <div class="header__rubric rubric">
-                    <div class="rubric__item">
-                        <a href="#" class="rubric__link">Рецепты</a>
+                <div class="header__rubric rubric swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide rubric__item">
+                            <a href="#" class="rubric__link">Диеты</a>
+
+                        </div>
+                        <div class="swiper-slide rubric__item">
+                            <a href="#" class="rubric__link">Еда для красоты</a>
+
+                        </div>
+                        <div class="swiper-slide rubric__item">
+                            <a href="#" class="rubric__link">Диеты</a>
+
+                        </div>
+                        <div class="swiper-slide rubric__item">
+                            <a href="#" class="rubric__link">Еда для красоты</a>
+
+                        </div>
+                        <div class="swiper-slide rubric__item">
+                            <a href="#" class="rubric__link">Диеты</a>
+
+                        </div>
+                        <div class="swiper-slide rubric__item">
+                            <a href="#" class="rubric__link">Еда для красоты</a>
+
+                        </div>
 
                     </div>
-                    <div class="rubric__item">
-                        <a href="#" class="rubric__link">Витамины</a>
 
-                    </div>
-                    <div class="rubric__item">
-                        <a href="#" class="rubric__link">Сезонные продукты</a>
-
-                    </div>
-                    <div class="rubric__item">
-                        <a href="#" class="rubric__link">Здоровое питание</a>
-
-                    </div>
-                    <div class="rubric__item">
-                        <a href="#" class="rubric__link">Диеты</a>
-
-                    </div>
-                    <div class="rubric__item">
-                        <a href="#" class="rubric__link">Еда для красоты</a>
-
+                    <div class="slider-prev"></div>
+                    <div class="slider-next">
+                        <div>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.25 11.0837L9.33333 7.00033L5.25 2.91699" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="header__form modal-form">
@@ -457,7 +471,7 @@
                             <circle cx="20" cy="4" r="3" fill="#9986D5"/>
                         </svg>
                     </button>
-                    <button class="header__account" aria-label="Аккаунт">
+                    <button class="header__account" data-fancybox data-src="#modal-signin" aria-label="Аккаунт">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12" cy="9" r="5" stroke="white" stroke-width="2"/>
                             <path d="M20 20C18.9175 16.2886 15.866 14 12 14C8.13401 14 5.08248 16.2886 4 20"
@@ -471,30 +485,32 @@
                     </button>
                 </div>
             </div>
-            <div class="header__rubric rubric">
-                <div class="rubric__item">
-                    <a href="#" class="rubric__link">Рецепты</a>
+            <div class="header__rubric rubric swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rubric__item">
+                        <a href="#" class="rubric__link">Рецепты</a>
 
-                </div>
-                <div class="rubric__item">
-                    <a href="#" class="rubric__link">Витамины</a>
+                    </div>
+                    <div class="swiper-slide rubric__item">
+                        <a href="#" class="rubric__link">Витамины</a>
 
-                </div>
-                <div class="rubric__item">
-                    <a href="#" class="rubric__link">Сезонные продукты</a>
+                    </div>
+                    <div class="swiper-slide rubric__item">
+                        <a href="#" class="rubric__link">Сезонные продукты</a>
 
-                </div>
-                <div class="rubric__item">
-                    <a href="#" class="rubric__link">Здоровое питание</a>
+                    </div>
+                    <div class="swiper-slide rubric__item">
+                        <a href="#" class="rubric__link">Здоровое питание</a>
 
-                </div>
-                <div class="rubric__item">
-                    <a href="#" class="rubric__link">Диеты</a>
+                    </div>
+                    <div class="swiper-slide rubric__item">
+                        <a href="#" class="rubric__link">Диеты</a>
 
-                </div>
-                <div class="rubric__item">
-                    <a href="#" class="rubric__link">Еда для красоты</a>
+                    </div>
+                    <div class="swiper-slide rubric__item">
+                        <a href="#" class="rubric__link">Еда для красоты</a>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -509,7 +525,7 @@
 
         <div class="editorial">
             <div class="editorial__item">
-                <div class="editorial__image"><img src="assets/images/e1x352.png" alt="editor name" width="352" height="263"></div>
+                <div class="editorial__image"><img src="assets/images/e1.png" alt="editor name" width="352" height="263"></div>
                 <div class="editorial__info">
                     <div class="editorial__job">Издатель</div>
                     <div class="editorial__name">Антон Шехетов</div>
@@ -517,7 +533,7 @@
                 </div>
             </div>
             <div class="editorial__item">
-                <div class="editorial__image"><img src="assets/images/e8x352.png" alt="editor name" width="352" height="263"></div>
+                <div class="editorial__image"><img src="assets/images/e2.png" alt="editor name" width="352" height="263"></div>
                 <div class="editorial__info">
                     <div class="editorial__job">Главный редактор</div>
                     <div class="editorial__name">Анастасия Владимирова
@@ -528,7 +544,7 @@
                 </div>
             </div>
             <div class="editorial__item">
-                <div class="editorial__image"><img src="assets/images/e3x352.png" alt="editor name" width="352" height="263"></div>
+                <div class="editorial__image"><img src="assets/images/e3.png" alt="editor name" width="352" height="263"></div>
                 <div class="editorial__info">
                     <div class="editorial__job">Редактор</div>
                     <div class="editorial__name">Ольга Корниенко</div>
@@ -536,7 +552,7 @@
                 </div>
             </div>
             <div class="editorial__item">
-                <div class="editorial__image"><img src="assets/images/e5x352.png" alt="editor name" width="352" height="263"></div>
+                <div class="editorial__image"><img src="assets/images/e4.png" alt="editor name" width="352" height="263"></div>
                 <div class="editorial__info">
                     <div class="editorial__job">Редактор</div>
                     <div class="editorial__name">Ирина Конопельченко</div>
@@ -544,7 +560,7 @@
                 </div>
             </div>
             <div class="editorial__item">
-                <div class="editorial__image"><img src="assets/images/e6x352.png" alt="editor name" width="352" height="263"></div>
+                <div class="editorial__image"><img src="assets/images/e5.png" alt="editor name" width="352" height="263"></div>
                 <div class="editorial__info">
                     <div class="editorial__job">Выпускающий редактор</div>
                     <div class="editorial__name">Дарья Фещенко</div>
@@ -552,7 +568,7 @@
                 </div>
             </div>
             <div class="editorial__item">
-                <div class="editorial__image"><img src="assets/images/e4x352.png" alt="editor name" width="352" height="263"></div>
+                <div class="editorial__image"><img src="assets/images/e6.png" alt="editor name" width="352" height="263"></div>
                 <div class="editorial__info">
                     <div class="editorial__job">Редактор новостей</div>
                     <div class="editorial__name">Елизавета Ашлапова</div>
@@ -560,7 +576,7 @@
                 </div>
             </div>
             <div class="editorial__item">
-                <div class="editorial__image"><img src="assets/images/e7x352.png" alt="editor name" width="352" height="263"></div>
+                <div class="editorial__image"><img src="assets/images/e7.png" alt="editor name" width="352" height="263"></div>
                 <div class="editorial__info">
                     <div class="editorial__job">Корректор</div>
                     <div class="editorial__name">Маргарита Страйста</div>
@@ -568,7 +584,7 @@
                 </div>
             </div>
             <div class="editorial__item">
-                <div class="editorial__image"><img src="assets/images/e9x352.png" alt="editor name" width="352" height="263"></div>
+                <div class="editorial__image"><img src="assets/images/e8.png" alt="editor name" width="352" height="263"></div>
                 <div class="editorial__info">
                     <div class="editorial__job">Шеф-редактор</div>
                     <div class="editorial__name">Екатерина Лаврова</div>
@@ -577,7 +593,7 @@
                 </div>
             </div>
             <div class="editorial__item">
-                <div class="editorial__image"><img src="assets/images/e2x352.png" alt="editor name" width="352" height="263"></div>
+                <div class="editorial__image"><img src="assets/images/e9.png" alt="editor name" width="352" height="263"></div>
                 <div class="editorial__info">
                     <div class="editorial__job">Редактор</div>
                     <div class="editorial__name">Елена Федюнина</div>
@@ -808,7 +824,7 @@
                       placeholder="Напишите сообщение"></textarea>
         </div>
         <div class="form__submit submit">
-            <button type="submit" class="submit__button" aria-label="Отправить">Отправить</button>
+            <button type="submit" class="submit__button" aria-label="Отправить" disabled>Отправить</button>
         </div>
     </form>
 
@@ -924,7 +940,7 @@
 
 </div>
 <script src="assets/js/scripts.js"></script>
-
+<script src="assets/libs/swiper/swiper-bundle.min.js"></script>
 <script src="assets/libs/fancybox/fancybox.umd.js"></script>
 </body>
 </html>
