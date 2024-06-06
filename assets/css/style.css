@@ -3016,7 +3016,7 @@ cursor: pointer;
 .hide-scrollbar .header__rubric{
     z-index: 99999;
     position: relative;
-    margin-right: 306px;
+    margin-right: 306px!important;
 }
 .hide-scrollbar .header__form{
     display: none;
@@ -3365,7 +3365,7 @@ padding: 24px;
 }
 @media (max-width: 768px) {
     .hide-scrollbar .header__rubric{
-        margin-right: 0;
+        margin-right: 0!important;
     }
     .infopage__title{
 
