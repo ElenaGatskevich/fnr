@@ -7,12 +7,30 @@ document.addEventListener("DOMContentLoaded", (function () {
         Fancybox.bind('[data-fancybox="notification__mobile"]', {
             mainClass: "notification__container",
         });
+        new Swiper(".rubric", {
+
+
+            spaceBetween: 12,
+            slidesPerView: "auto",
+            slidesPerColumn: 1,
+            allowTouchMove:true,
+
+            navigation: {
+                nextEl: '.slider-next',
+                prevEl: '.slider-prev',
+            },
+
+        });
     }
 
 ));
 const menu=document.querySelectorAll('.header__burger');
+const modileContent=document.querySelector('.mobile__content');
 menu.forEach(el => el.addEventListener('click', function (el) {
     this.closest('body').classList.add('open');
+    var height = window.getComputedStyle(modileContent, null).height;
+
+
 }, false));
 const menuClose=document.querySelectorAll('.mobile__close');
 menuClose.forEach(el => el.addEventListener('click', function (el) {
@@ -131,42 +149,40 @@ tabsButtons.forEach(el => {
 
 
 
-const massivInput = document.querySelectorAll('.edit__input');
-const btnSubmit = document.querySelector('.edit__save');
 
+const forms=document.querySelectorAll('form');
 let allInputsFilled = false;
+forms.forEach(element => {
+    element.addEventListener('click',() =>{
 
-massivInput.forEach(element => {
-    element.addEventListener('input', () => {
-        allInputsFilled = true;
-        massivInput.forEach(input => {
-            if (!input.value) {
-                allInputsFilled = false;
-            }
-        });
-        if (allInputsFilled) {
-            btnSubmit.disabled = false;
-        }
+
+        const input = element.querySelectorAll('input,textarea');
+
+        const btnSubmit = element.querySelector('button[type="submit"]');
+
+
+
+
+            input.forEach(el => {
+                el.addEventListener('input', () => {
+                    allInputsFilled = true;
+                    input.forEach(input => {
+                        if (!input.value) {
+                            allInputsFilled = false;
+                        }
+                    });
+                    if (allInputsFilled) {
+                        btnSubmit.disabled = false;
+                    }
+                });
+
+            });
+
+
     });
 });
-const massivInputQ = document.querySelectorAll('.form__input');
-const btnSubmitQ = document.querySelector('.submit__button');
 
-let allInputsFilledQ = false;
 
-massivInputQ.forEach(element => {
-    element.addEventListener('input', () => {
-        allInputsFilledQ = true;
-        massivInputQ.forEach(input => {
-            if (!input.value) {
-                allInputsFilledQ = false;
-            }
-        });
-        if (allInputsFilledQ) {
-            btnSubmitQ.disabled = false;
-        }
-    });
-});
 const comment = document.querySelectorAll('.answer__text');
 const commentClose = document.querySelectorAll('.answer__close');
 comment.forEach(el => el.addEventListener('click', function (el) {
