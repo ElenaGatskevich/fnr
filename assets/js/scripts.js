@@ -1,11 +1,17 @@
 document.addEventListener("DOMContentLoaded", (function () {
 
-        Fancybox.bind("[data-fancybox]");
+        Fancybox.bind("[data-fancybox]",{
+            idle: false,
+            dragToClose: false,  animated: false,
+        });
         Fancybox.bind('[data-fancybox="notification"]', {
-            mainClass: "notification__container",
+            mainClass: "notification__container", idle: false,
+            dragToClose: false,  animated: false,
         });
         Fancybox.bind('[data-fancybox="notification__mobile"]', {
             mainClass: "notification__container",
+            idle: false,
+            dragToClose: false,  animated: false,
         });
         new Swiper(".rubric", {
 
