@@ -671,6 +671,8 @@ input[type="search"]::-webkit-search-results-decoration {
     position: absolute;
 
     height: 100%;
+    overflow: auto;
+    max-height: 100vh;
 }
 .mobile__social{
     padding-right: 24px;
@@ -3029,6 +3031,7 @@ cursor: pointer;
 }
 body.open{
     height: auto;
+    overflow: hidden;
 }
 .slider-next{
 
