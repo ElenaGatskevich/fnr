@@ -167,9 +167,16 @@ forms.forEach(element => {
                 el.addEventListener('input', () => {
                     allInputsFilled = true;
                     input.forEach(input => {
-                        if (!input.value) {
-                            allInputsFilled = false;
+                        if (input.classList.contains('edit__input'))
+                        {
+                            allInputsFilled = true;
                         }
+                        else{
+                            if (!input.value) {
+                                allInputsFilled = false;
+                            }
+                        }
+
                     });
                     if (allInputsFilled) {
                         btnSubmit.disabled = false;
@@ -181,6 +188,15 @@ forms.forEach(element => {
 
     });
 });
+
+
+
+
+
+
+
+
+
 
 
 const comment = document.querySelectorAll('.answer__text');
