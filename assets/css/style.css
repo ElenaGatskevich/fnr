@@ -2611,7 +2611,7 @@ max-width: 100%;
 .preview__likes.active svg{
     fill: #fff;
 }
-.preview__views:hover,.preview__likes:not(.active):hover,.preview__comment:hover,.preview__favorites:not(.active):hover{
+.preview__likes:not(.active):hover,.preview__comment:hover,.preview__favorites:not(.active):hover{
     background: rgba(11, 11, 11, 0.44);
 
 }
@@ -3089,6 +3089,9 @@ width: max-content!important;
     }
 }
 @media (max-width: 1280px) {
+    .accounts__item{
+        width: 48%;
+    }
     .hide-scrollbar .header__rubric{
         z-index: 999;
         position: relative;
