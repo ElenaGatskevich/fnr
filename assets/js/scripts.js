@@ -10,16 +10,22 @@ document.addEventListener("DOMContentLoaded", (function () {
         new Swiper(".rubric", {
 
 
-            spaceBetween: 12,
+
             slidesPerView: "auto",
-            slidesPerColumn: 1,
-            allowTouchMove:true,
+
 
             navigation: {
                 nextEl: '.slider-next',
                 prevEl: '.slider-prev',
             },
 
+        });
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
     }
 
