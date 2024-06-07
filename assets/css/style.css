@@ -3367,6 +3367,22 @@ padding: 24px;
     }
 }
 @media (max-width: 768px) {
+    .preview__views{
+        top: 24px;
+        right: 24px;
+    }
+    .preview__favorites {
+        right: 24px;
+        bottom: 24px;
+    }
+    .preview__comment{
+        bottom: 24px;
+        left: 117px;
+    }
+    .preview__likes {
+        bottom: 24px;
+        left: 24px;
+    }
     .hide-scrollbar .header__rubric{
         margin-right: 0!important;
     }
