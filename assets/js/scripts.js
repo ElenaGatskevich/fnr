@@ -105,20 +105,14 @@ tabsButtons.forEach(el => {
         const prevActiveButton = document.querySelector('.tab.tab_active');
 
         if (prevActiveButton) {
-               console.log(el.parentNode.closest('.tabs__item_active'));
+
             if(el.parentNode.closest('.tabs__item_active')){
                 const child=el.parentNode.closest('.tabs__item_active').querySelectorAll('.tab');
 
               child.forEach(el=>{
                   el.classList.remove('tab_active');
               });
-                const nextActiveItemId = `#${el.getAttribute('data-tab')}`;
 
-                const nextActiveItem = document.querySelector(nextActiveItemId);
-
-                el.classList.add('tab_active');
-
-                nextActiveItem.classList.add('tabs__item_active');
             }
             else{
                 prevActiveButton.classList.remove('tab_active');
@@ -134,13 +128,7 @@ tabsButtons.forEach(el => {
                     child.forEach(el=>{
                         el.classList.remove('tabs__item_active');
                     });
-                    const nextActiveItemId = `#${el.getAttribute('data-tab')}`;
 
-                    const nextActiveItem = document.querySelector(nextActiveItemId);
-
-                    el.classList.add('tab_active');
-
-                    nextActiveItem.classList.add('tabs__item_active');
 
             }
             else{
