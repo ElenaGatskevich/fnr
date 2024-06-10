@@ -3272,7 +3272,7 @@ textarea{
     .header__top{
         padding-left: 47px;
         padding-right: 16px;
-        justify-content: space-between;
+       
         box-sizing: border-box;
         max-width: 100%;
     }
