@@ -398,6 +398,7 @@ display: none;
     border: none;
     position: relative;
     min-width: max-content;
+    width: max-content;
 
 }
 
@@ -3272,6 +3273,7 @@ textarea{
         padding-left: 47px;
         padding-right: 16px;
         justify-content: space-between;
+        box-sizing: border-box;
     }
     .menu__list{
         display: flex;
