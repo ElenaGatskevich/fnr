@@ -3116,9 +3116,11 @@ width: max-content!important;
     margin-left: 62px;
 }
 .notification__container .fancybox__backdrop{
-    top: 124px;
+    top: 110px;
 }
-
+.notification__container header{
+    background: rgba(11, 11, 11, 0.32) !important;
+}
 .swiper-backface-hidden .slider-next{
     display: none;
 }
