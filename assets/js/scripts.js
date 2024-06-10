@@ -60,8 +60,12 @@ search.forEach(el => el.addEventListener('click', function (el) {
 
 
 const searchButton = document.querySelectorAll('.search__close');
+const searchInput = document.querySelectorAll('.search__input');
 searchButton.forEach(el => el.addEventListener('click', function (el) {
     this.closest('.search').classList.remove('open');
+    searchInput.forEach( function (el) {
+        el.value='';
+    }, false);
     social.forEach(function (el) {
         el.classList.remove('hidden');
     }, false);
@@ -179,7 +183,9 @@ forms.forEach(element => {
 
                     });
                     if (allInputsFilled) {
-                        btnSubmit.disabled = false;
+                        if(btnSubmit) {
+                            btnSubmit.disabled = false;
+                        }
                     }
                 });
 
