@@ -3740,9 +3740,10 @@ padding: 24px;
         padding: 32px 24px!important;
     }
 
-    .notification__container{
+    .modal-notification{
         margin-left: 12px!important;
         margin-right: 12px!important;
+        width: auto!important;
     }
     .last__item:not(:last-child){
         margin-bottom: 24px;
@@ -3821,7 +3822,7 @@ padding: 24px;
     }
 
     .modal-notification{
-        width: 100% !important;
+
         max-width: 100%!important;
     }
 }
