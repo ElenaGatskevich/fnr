@@ -3268,11 +3268,13 @@ textarea{
     }
     .header__wrap {
         position: inherit;
+        flex-grow: 1;
+        justify-content: flex-end;
     }
     .header__top{
         padding-left: 47px;
         padding-right: 16px;
-       
+
         box-sizing: border-box;
         max-width: 100%;
     }
