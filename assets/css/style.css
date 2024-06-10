@@ -253,7 +253,7 @@ opacity: 1;
     border-radius: 10px;
     color: var(--Gray2_color);
     border: none;
-
+padding-right: 48px;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
@@ -3121,11 +3121,15 @@ width: max-content!important;
 }
 .notification__container header{
     background: rgba(11, 11, 11, 0.32) !important;
+    transition-duration: .05s;
+    transition-property: background;
 }
 .swiper-backface-hidden .slider-next{
     display: none;
 }
-
+textarea{
+    resize: none!important;
+}
 @media (max-width:1304px) {
     .slider-next{
 
@@ -3231,7 +3235,7 @@ width: max-content!important;
         padding-left: 24px;
         padding-right: 24px;
         background: #fff;
-        padding-bottom: 76px;
+        padding-bottom: 176px;
         margin: 0;
         width: 100%;
         box-sizing: border-box;
