@@ -3073,6 +3073,7 @@ body.open{
     position: absolute;
     z-index: 99;
     right: 152px;
+    left: auto;
     top: 0;
     background: var(--new_bg);
 
