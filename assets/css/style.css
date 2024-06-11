@@ -3117,8 +3117,8 @@ width: max-content!important;
 }
 
 .header__form{
-    padding-left: 62px;
-    margin-left: 0;
+    margin-left: 62px;
+
 }
 .notification__container .fancybox__backdrop{
     top: 110px;
