@@ -1470,16 +1470,16 @@ z-index: 99;
     padding: 24px 12px;
     border-radius: 14px;
 }
-/*.best__item:hover{
+.best__item:hover{
     background: var(--background);
     transition-duration:var(--time);
     transition-property:  background;
-}*/
+}/*
 .best__item:hover .best__name {
     background: var(--background);
     -webkit-background-clip: text!important;
     -webkit-text-fill-color: transparent;
-}
+}*/
 .best__comment:hover .comment__article{
     background: var(--background);
     -webkit-background-clip: text!important;
