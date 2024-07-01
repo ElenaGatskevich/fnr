@@ -949,15 +949,15 @@ display: block;
 }
 .capital:hover .capital__read{
   opacity: 1;
-    transition-duration:var(--time);
-    transition-property:  opacity;
+  /*  transition-duration:var(--time);*/
+   /* transition-property:  opacity;*/
 }
-.capital:hover .capital__title:not(.capital__title_nohover){
+/*.capital:hover .capital__title:not(.capital__title_nohover){
 background: var(--background);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-}
+}*/
 
 
 .capital_tag{
@@ -1250,11 +1250,11 @@ path.hover{
     flex-wrap: wrap;
     gap: 2%;
 }
-.last__item:hover .last__link {
+/*.last__item:hover .last__link {
     -webkit-background-clip: text!important;
     -webkit-text-fill-color: transparent;
     background: var(--background);
-}
+}*/
 .last__item{
     width: 31.5%;
         max-width: 32.5%;
@@ -1439,11 +1439,11 @@ z-index: 99;
     padding: 24px 12px;
     border-radius: 14px;
 }
-.best__item:hover{
+/*.best__item:hover{
     background: var(--background);
     transition-duration:var(--time);
     transition-property:  background;
-}
+}*/
 .best__item:hover .best__name {
     background: var(--background);
     -webkit-background-clip: text!important;
@@ -2022,11 +2022,11 @@ background: var(--G2_base_color);
 .likes_personal:hover path{
    fill: var(--G2_base_hover_color);
 }
-.comment:hover .comment__article{
+/*.comment:hover .comment__article{
     background: var(--background);
     -webkit-background-clip: text!important;
     -webkit-text-fill-color: transparent;
-}
+}*/
 .comment__text_personal{
 
     font-size: 16px;
@@ -3541,11 +3541,11 @@ padding: 24px;
         line-height: 22px!important;
         margin-bottom: 0 !important;
     }
-    .capital__title:not(.capital__title_nohover){
+  /*  .capital__title:not(.capital__title_nohover){
         background: var(--background);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
+    }*/
     .last__link{
         background: var(--background);
         -webkit-background-clip: text;
@@ -3782,11 +3782,11 @@ padding: 24px;
     .best__item{
         background: var(--background);
     }
-    .best__name{
+   /* .best__name{
         background: var(--background);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
+    }*/
     .capital__title_tag{
         margin-bottom: 32px!important;
     }
