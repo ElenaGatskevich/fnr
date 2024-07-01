@@ -145,6 +145,22 @@ button:active, input:active{
 button:focus,input:focus{
 
 }
+.infopage__text table{
+        width: 100%;
+}
+.infopage__text  th{
+        padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+}
+.infopage__text  td{
+        padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
 .aside{
     margin-bottom:24px;
 }
