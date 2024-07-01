@@ -3160,6 +3160,10 @@ textarea{
     }
 }
 @media (max-width: 1280px) {
+
+    .menu__link:hover{
+    color:#000;
+    }
     .accounts__item{
         width: 48%;
     }
