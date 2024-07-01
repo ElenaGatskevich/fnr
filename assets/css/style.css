@@ -145,6 +145,9 @@ button:active, input:active{
 button:focus,input:focus{
 
 }
+.aside{
+    margin-bottom:24px;
+}
 .fancybox__container{
     z-index: 9999!important;
 }
