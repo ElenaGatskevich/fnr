@@ -3201,7 +3201,7 @@ textarea{
         margin-bottom: 32px;
     }
     .capital__image img{
-        height: auto;
+       
     }
     .capital_big .capital__image img{
         height: revert-layer;
@@ -3458,7 +3458,7 @@ flex-direction: column;
     }
     .capital__image img {
 
-        width: 100%;
+     
 
     }
     .capital__info:not(.capital__info_one){
@@ -3468,6 +3468,9 @@ padding: 24px;
     }
 }
 @media (max-width: 768px) {
+        .capital__image img {
+        width: 100%;
+    }
      .preview img{
         
         max-height: 250px;
