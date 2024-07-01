@@ -148,6 +148,9 @@ button:focus,input:focus{
 .aside{
     margin-bottom:24px;
 }
+.infopage__text *{
+    max-width:100%;
+}
 .fancybox__container{
     z-index: 9999!important;
 }
