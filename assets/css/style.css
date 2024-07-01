@@ -1384,11 +1384,14 @@ z-index: 99;
     margin-top: -42px;
     position: relative;
     flex-grow: 1;
+        display: flex;
+    flex-direction: column;
 }
 .last__flex{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+       align-items: flex-end;
+    flex-grow: 1;
 }
 .last__data{
     color: var(--Gray2_color);
