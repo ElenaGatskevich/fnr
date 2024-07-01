@@ -1303,6 +1303,7 @@ z-index: 99;
     padding: 6px 12px;
     border-radius: 24px;
     background: var(--background);
+        max-width: max-content;
 
 
 
