@@ -2667,7 +2667,7 @@ max-width: 100%;
 }
 .preview img{
     object-fit: cover;
-
+width:100%;
     display: block;
 }
 .preview__views{
