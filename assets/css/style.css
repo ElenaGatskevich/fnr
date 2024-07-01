@@ -2266,6 +2266,7 @@ color: var(--Black_color);
     margin-bottom: 24px;
     width: 32%;
     box-sizing: border-box;
+     background: #fff;
 }
 .accounts__item:hover{
     background: var(--color);
