@@ -145,6 +145,9 @@ button:active, input:active{
 button:focus,input:focus{
 
 }
+.rubric__item:last-child{
+    margin-right:20px;
+}
 .infopage__text table{
         width: 100%;
 }
