@@ -1928,6 +1928,7 @@ color: var(--G2_base_hover_color);
 
     width: 49%;
     min-width: 49%;
+       background: #fff;
 }
 .signin__item:hover{
     background: var(--color);
